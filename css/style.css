@@ -1,0 +1,57 @@
+@import url(https://db.onlinewebfonts.com/c/efb328afbc0517fdab4b59d2823e2e2c?family=MADEOuterSans);
+@import url(https://db.onlinewebfonts.com/c/caa25bec14152a366b009a10c7012773?family=MADEOuterSans-Medium);
+@import url(https://db.onlinewebfonts.com/c/0f0a87f9350ebb3e6ea61fbcb69d3337?family=MADEOuterSans-Light);
+@import url(https://db.onlinewebfonts.com/c/0a99850add2d00c04ce239db52982b61?family=MADEOuterSans-Bold);
+@import url(https://db.onlinewebfonts.com/c/fa59c9544603180f2136a0a233182746?family=Bruno+Ace+SC);
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "MADEOuterSans";
+  font-weight: 300;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  background-color: inherit;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+}
