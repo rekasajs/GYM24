@@ -1,8 +1,10 @@
-@import url(https://db.onlinewebfonts.com/c/efb328afbc0517fdab4b59d2823e2e2c?family=MADEOuterSans);
-@import url(https://db.onlinewebfonts.com/c/caa25bec14152a366b009a10c7012773?family=MADEOuterSans-Medium);
-@import url(https://db.onlinewebfonts.com/c/0f0a87f9350ebb3e6ea61fbcb69d3337?family=MADEOuterSans-Light);
-@import url(https://db.onlinewebfonts.com/c/0a99850add2d00c04ce239db52982b61?family=MADEOuterSans-Bold);
-@import url(https://db.onlinewebfonts.com/c/fa59c9544603180f2136a0a233182746?family=Bruno+Ace+SC);
+@import url("https://fonts.cdnfonts.com/css/made-outer-sans-alt");
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/MADEOuterSansLightPERSONALUSE.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,7 +15,7 @@ body {
   background-color: #000000;
   padding: 0;
   margin: 0;
-  font-family: "MADEOuterSans";
+  font-family: "MADE Outer Sans", sans-serif;
   font-weight: 300;
   font-size: 14px;
   color: #ffffff;
@@ -78,7 +80,6 @@ input {
 }
 
 .title {
-  font-size: 64px;
   font-weight: 500;
   line-height: normal;
 }
@@ -258,6 +259,7 @@ input {
 }
 
 .hero {
+  min-height: 900px;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -270,7 +272,6 @@ input {
 }
 .hero__container {
   padding-top: 291px;
-  padding-bottom: 245px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,10 +293,12 @@ input {
 }
 .hero__title {
   max-width: 668px;
+  font-weight: 500;
+  font-size: 64px;
 }
 @media (max-width: 743px) {
   .hero__title {
-    max-width: 350px;
+    max-width: 500px;
     font-size: 50px;
     text-align: center;
     margin: 0 auto;
@@ -325,4 +328,117 @@ input {
   .hero__btn {
     margin-top: 200px;
   }
+}
+
+.reasons {
+  margin-top: 179px;
+  padding-bottom: 250px;
+}
+@media (max-width: 999px) {
+  .reasons {
+    margin-top: 158px;
+    padding-bottom: 204px;
+  }
+}
+@media (max-width: 743px) {
+  .reasons {
+    margin-top: 81px;
+    padding-bottom: 180px;
+  }
+}
+.reasons__title {
+  margin-bottom: 120px;
+  font-size: 48px;
+}
+@media (max-width: 999px) {
+  .reasons__title {
+    text-align: center;
+  }
+}
+@media (max-width: 743px) {
+  .reasons__title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 66px;
+  }
+}
+@media (max-width: 343px) {
+  .reasons__title {
+    font-size: 28px;
+  }
+}
+.reasons__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  row-gap: 90px;
+}
+@media (max-width: 999px) {
+  .reasons__items {
+    padding: 0 80px;
+    gap: 60px;
+  }
+}
+@media (max-width: 743px) {
+  .reasons__items {
+    padding: 0 20px;
+    gap: 33px;
+  }
+}
+@media (max-width: 393px) {
+  .reasons__items {
+    padding: 0;
+  }
+}
+.reasons__item {
+  max-width: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 0 10px;
+}
+@media (max-width: 999px) {
+  .reasons__item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 743px) {
+  .reasons__item {
+    padding: 0;
+  }
+}
+.reasons__item-img {
+  width: 65px;
+  height: 80px;
+}
+@media (max-width: 743px) {
+  .reasons__item-img {
+    width: 42px;
+    height: 52px;
+  }
+}
+.reasons__item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.reasons__item-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.reasons__item-descr {
+  max-width: 400px;
+  font-weight: 300;
+  margin-top: 12px;
 }

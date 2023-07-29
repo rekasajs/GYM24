@@ -1,8 +1,11 @@
-@import url(https://db.onlinewebfonts.com/c/efb328afbc0517fdab4b59d2823e2e2c?family=MADEOuterSans); //MADEOuterSans-Regular
-@import url(https://db.onlinewebfonts.com/c/caa25bec14152a366b009a10c7012773?family=MADEOuterSans-Medium); //MADEOuterSans-Medium
-@import url(https://db.onlinewebfonts.com/c/0f0a87f9350ebb3e6ea61fbcb69d3337?family=MADEOuterSans-Light); //MADEOuterSans-Light
-@import url(https://db.onlinewebfonts.com/c/0a99850add2d00c04ce239db52982b61?family=MADEOuterSans-Bold); //MADEOuterSans-Bold
-@import url(https://db.onlinewebfonts.com/c/fa59c9544603180f2136a0a233182746?family=Bruno+Ace+SC); //BrunoAce SC-Regular
+@import url('https://fonts.cdnfonts.com/css/made-outer-sans-alt');
+
+@font-face {
+  font-family: 'MADE Outer Sans';
+  src: url('../fonts/MADEOuterSansLightPERSONALUSE.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
 
 html {
   box-sizing: border-box;
@@ -13,7 +16,7 @@ body {
   background-color: $color-black;
   padding: 0;
   margin: 0;
-  font-family: "MADEOuterSans";
+  font-family: 'MADE Outer Sans', sans-serif;
   font-weight: 300;
   font-size: 14px;
   color: $color-white;
