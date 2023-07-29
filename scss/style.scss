@@ -1,6 +1,7 @@
 //Цвета для шрифта
 $color-white: #ffffff;
 $color-black: #000000;
+$color-yellow: #faff00;
 @import "./settings";
 
 .container {
@@ -12,10 +13,24 @@ $color-black: #000000;
   }
 }
 
+.title {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn {
+  background-color: $color-yellow;
+  border-radius: 30px;
+  color: $color-black
+}
 
 //Большие компоненты
 @import "./header/header";
+@import "./main/main";
 //Маленькие компоненты
 @import "./header/nav";
 @import "./header/hamburger-menu";
 @import "./header/logo";
+
+@import "./main/hero";

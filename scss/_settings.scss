@@ -10,13 +10,13 @@ html {
 }
 
 body {
+  background-color: $color-black;
   padding: 0;
   margin: 0;
   font-family: "MADEOuterSans";
   font-weight: 300;
   font-size: 14px;
   color: $color-white;
-  height: 1000vh;
   @media (max-width: 743px) {
     &.lock {
       overflow: hidden;
