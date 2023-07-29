@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  z-index: 100;
+  background-color: black;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media (max-width: 743px) {
+      padding-top: 60px;
+    }
+  }
+}

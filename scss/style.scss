@@ -1,1 +1,21 @@
+//Цвета для шрифта
+$color-white: #ffffff;
+$color-black: #000000;
 @import "./settings";
+
+.container {
+  max-width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+  @media (max-width: 392px) {
+    max-width: 317px;
+  }
+}
+
+
+//Большие компоненты
+@import "./header/header";
+//Маленькие компоненты
+@import "./header/nav";
+@import "./header/hamburger-menu";
+@import "./header/logo";

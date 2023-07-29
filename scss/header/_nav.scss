@@ -1,0 +1,42 @@
+.menu {
+  transition: all .3s ease;
+  @media (min-width: 1220px) {
+    transform: translateX(26px);
+  }
+  @media (max-width: 743px) {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+  }
+  &.active {
+    top: 0;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    @media (max-width: 743px) {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+  &__item {
+    padding: 0 5px;
+  }
+  &__link {
+    font-weight: 300;
+    @media (max-width: 743px) {
+      font-size: 32px;
+    }
+    @media (max-width: 392px) {
+      font-size: 28px;
+    }
+  }
+}
