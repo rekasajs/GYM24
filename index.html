@@ -7,6 +7,8 @@
         content="width=device-width, initial-scale=1.0">
   <title>GYM24</title>
   <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet"
         href="css/style.min.css">
 </head>
 
@@ -53,10 +55,12 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero" style="background-image: url(./img/background.jpg);">
+      <section class="hero"
+               style="background-image: url(./img/background.jpg);">
         <div class="container hero__container">
           <h1 class="hero__title title">Free trial session with a trainer</h1>
-          <a href="#" class="btn hero__btn">Detailed</a>
+          <a href="#"
+             class="btn hero__btn">Detailed</a>
         </div>
       </section>
       <section class="reasons">
@@ -64,41 +68,336 @@
           <h2 class="reasons__title title">Reasons to join</h2>
           <div class="reasons__items">
             <div class="reasons__item">
-              <img src="img/line.svg" area-hidden="true" class="reasons__item-img">
+              <img src="img/line.svg"
+                   area-hidden="true"
+                   class="reasons__item-img">
               <div class="reasons__item-info">
                 <h3 class="reasons__item-title">15000 sq.m.</h3>
                 <p class="reasons__item-descr">A spacious gym for sports – a safe distance between exercise machines</p>
               </div>
             </div>
             <div class="reasons__item">
-              <img src="img/equipment.svg" area-hidden="true" class="reasons__item-img">
+              <img src="img/equipment.svg"
+                   area-hidden="true"
+                   class="reasons__item-img">
               <div class="reasons__item-info">
                 <h3 class="reasons__item-title">More than 200 equipment</h3>
-                <p class="reasons__item-descr">No queues at the simulators. Premium equipment from LifeStyle, Hammer Strength, TechnoGym.</p>
+                <p class="reasons__item-descr">No queues at the simulators. Premium equipment from LifeStyle, Hammer
+                  Strength, TechnoGym.</p>
               </div>
             </div>
             <div class="reasons__item">
-              <img src="img/zones.svg" area-hidden="true" class="reasons__item-img">
+              <img src="img/zones.svg"
+                   area-hidden="true"
+                   class="reasons__item-img">
               <div class="reasons__item-info">
                 <h3 class="reasons__item-title">4 fitness zones</h3>
-                <p class="reasons__item-descr">From cardio to functional and cycle. Separate area for boxing and mixed martial arts</p>
+                <p class="reasons__item-descr">From cardio to functional and cycle. Separate area for boxing and mixed
+                  martial arts</p>
               </div>
             </div>
             <div class="reasons__item">
-              <img src="img/time.svg" area-hidden="true" class="reasons__item-img">
+              <img src="img/time.svg"
+                   area-hidden="true"
+                   class="reasons__item-img">
               <div class="reasons__item-info">
                 <h3 class="reasons__item-title">Round-the-clock operation</h3>
-                <p class="reasons__item-descr">The gym is open 24 hours a day, also works on all holidays and weekends</p>
+                <p class="reasons__item-descr">The gym is open 24 hours a day, also works on all holidays and weekends
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="membership">
+        <div class="container membership__container">
+          <h2 class="membership__title title">Gym membership</h2>
+          <div class="membership__items">
+            <article class="membership__item">
+              <div class="membership__item-header">
+                <h3 class="membership__item-title">Pass 'Trial'</h3>
+                <span>$0</span>
+              </div>
+              <div class="membership__item-info">
+                <ul class="membership__item-list">
+                  <li class="membership__item-descr">
+                    <p>Access to the gym from 8:00 to 14:00</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>The trainer on duty will introduce you to the gym</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#"
+                 class="membership__item-btn btn">Buy</a>
+            </article>
+            <article class="membership__item">
+              <div class="membership__item-header">
+                <h3 class="membership__item-title">Pass ‘Easy Start’ </h3>
+                <span>$119</span>
+              </div>
+              <div class="membership__item-info">
+                <ul class="membership__item-list">
+                  <li class="membership__item-descr">
+                    <p>Visit without restrictions 24/7</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Individual training program</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Access to the VTRAINER application</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Trainer support</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#"
+                 class="membership__item-btn btn">Buy</a>
+            </article>
+            <article class="membership__item">
+              <div class="membership__item-header">
+                <h3 class="membership__item-title">Pass ‘Free Time’ </h3>
+                <span>$49</span>
+              </div>
+              <div class="membership__item-info">
+                <ul class="membership__item-list">
+                  <li class="membership__item-descr">
+                    <p>The entrance time to the gym is from 14:00 to 16:00</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Without suspension of gym membership</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>The trainer on duty will introduce you to the gym</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#"
+                 class="membership__item-btn btn">Buy</a>
+            </article>
+            <article class="membership__item">
+              <div class="membership__item-header">
+                <h3 class="membership__item-title">Pass ‘1 Month 24/7’ </h3>
+                <span>$85</span>
+              </div>
+              <div class="membership__item-info">
+                <ul class="membership__item-list">
+                  <li class="membership__item-descr">
+                    <p>Visit without restrictions 24/7</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>The trainer on duty will introduce you to the gym</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#"
+                 class="membership__item-btn btn">Buy</a>
+            </article>
+            <article class="membership__item">
+              <div class="membership__item-header">
+                <h3 class="membership__item-title">Pass ‘In Shape (AM)’ </h3>
+                <span>$165</span>
+              </div>
+              <div class="membership__item-info">
+                <ul class="membership__item-list">
+                  <li class="membership__item-descr">
+                    <p>Training in mini-groups until 14:00</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Without suspension of gym membership</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Classes with a trainer in a mini-group 3 times a week</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Trainer support</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#"
+                 class="membership__item-btn btn">Buy</a>
+            </article>
+            <article class="membership__item">
+              <div class="membership__item-header">
+                <h3 class="membership__item-title">Pass ‘In Shape (PM)’ </h3>
+                <span>$195</span>
+              </div>
+              <div class="membership__item-info">
+                <ul class="membership__item-list">
+                  <li class="membership__item-descr">
+                    <p>Training in mini-groups until 17:00</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Without suspension of gym membership</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Classes with a trainer in a mini-group 3 times a week</p>
+                  </li>
+                  <li class="membership__item-descr">
+                    <p>Trainer support</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#"
+                 class="membership__item-btn btn">Buy</a>
+            </article>
+          </div>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="membership__item">
+                <div class="membership__item-header">
+                  <h3 class="membership__item-title">Pass 'Trial'</h3>
+                  <span>$0</span>
+                </div>
+                <div class="membership__item-info">
+                  <ul class="membership__item-list">
+                    <li class="membership__item-descr">
+                      <p>Access to the gym from 8:00 to 14:00</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>The trainer on duty will introduce you to the gym</p>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#"
+                   class="membership__item-btn btn">Buy</a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="membership__item">
+                <div class="membership__item-header">
+                  <h3 class="membership__item-title">Pass ‘Easy Start’ </h3>
+                  <span>$119</span>
+                </div>
+                <div class="membership__item-info">
+                  <ul class="membership__item-list">
+                    <li class="membership__item-descr">
+                      <p>Visit without restrictions 24/7</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Individual training program</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Access to the VTRAINER application</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Trainer support</p>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#"
+                   class="membership__item-btn btn">Buy</a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="membership__item">
+                <div class="membership__item-header">
+                  <h3 class="membership__item-title">Pass ‘Free Time’ </h3>
+                  <span>$49</span>
+                </div>
+                <div class="membership__item-info">
+                  <ul class="membership__item-list">
+                    <li class="membership__item-descr">
+                      <p>The entrance time to the gym is from 14:00 to 16:00</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Without suspension of gym membership</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>The trainer on duty will introduce you to the gym</p>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#"
+                   class="membership__item-btn btn">Buy</a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="membership__item">
+                <div class="membership__item-header">
+                  <h3 class="membership__item-title">Pass ‘1 Month 24/7’ </h3>
+                  <span>$85</span>
+                </div>
+                <div class="membership__item-info">
+                  <ul class="membership__item-list">
+                    <li class="membership__item-descr">
+                      <p>Visit without restrictions 24/7</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>The trainer on duty will introduce you to the gym</p>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#"
+                   class="membership__item-btn btn">Buy</a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="membership__item">
+                <div class="membership__item-header">
+                  <h3 class="membership__item-title">Pass ‘In Shape&nbsp;(AM)’ </h3>
+                  <span>$165</span>
+                </div>
+                <div class="membership__item-info">
+                  <ul class="membership__item-list">
+                    <li class="membership__item-descr">
+                      <p>Training in mini-groups until 14:00</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Without suspension of gym membership</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Classes with a trainer in a mini-group 3 times a week</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Trainer support</p>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#"
+                   class="membership__item-btn btn">Buy</a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="membership__item">
+                <div class="membership__item-header">
+                  <h3 class="membership__item-title">Pass ‘In Shape&nbsp;(PM)’ </h3>
+                  <span>$195</span>
+                </div>
+                <div class="membership__item-info">
+                  <ul class="membership__item-list">
+                    <li class="membership__item-descr">
+                      <p>Training in mini-groups until 17:00</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Without suspension of gym membership</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Classes with a trainer in a mini-group 3 times a week</p>
+                    </li>
+                    <li class="membership__item-descr">
+                      <p>Trainer support</p>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#"
+                   class="membership__item-btn btn">Buy</a>
+              </article>
             </div>
           </div>
         </div>
       </section>
     </main>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"
           integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
           crossorigin="anonymous"></script>
   <script src="js/hamburger-menu.js"></script>
 </body>
+
 </html>

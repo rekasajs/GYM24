@@ -1,0 +1,10 @@
+.swiper {
+  display: none;
+  @media (max-width: 743px) {
+    display: block;
+  }
+  &-slide {
+    display: flex;
+    justify-content: center;
+  }
+}

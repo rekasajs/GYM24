@@ -442,3 +442,119 @@ input {
   font-weight: 300;
   margin-top: 12px;
 }
+
+.membership {
+  padding-bottom: 250px;
+}
+@media (max-width: 999px) {
+  .membership {
+    padding-bottom: 180px;
+  }
+}
+@media (max-width: 743px) {
+  .membership {
+    padding-bottom: 200px;
+  }
+}
+.membership__title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 120px;
+}
+@media (max-width: 999px) {
+  .membership__title {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 743px) {
+  .membership__title {
+    margin-bottom: 70px;
+    font-size: 28px;
+  }
+}
+.membership__items {
+  display: grid;
+  grid-template-columns: repeat(3, 275px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 68px;
+}
+@media (max-width: 999px) {
+  .membership__items {
+    grid-template-columns: repeat(2, 275px);
+  }
+}
+@media (max-width: 743px) {
+  .membership__items {
+    margin-bottom: 70px;
+    font-size: 28px;
+    display: none;
+  }
+}
+.membership__item {
+  border-radius: 10px;
+  background: #222222;
+  padding-bottom: 38px;
+  width: 275px;
+  min-height: 397px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.membership__item-header {
+  text-align: center;
+  padding: 22px 0px;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+.membership__item-header span {
+  font-size: 24px;
+}
+.membership__item-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.membership__item-info {
+  padding: 27px 22px 22px 22px;
+}
+.membership__item-descr {
+  margin-bottom: 15px;
+  padding-left: 32px;
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: left center;
+}
+.membership__item-btn {
+  display: inline-block;
+  padding: 6px 10px;
+  max-width: 107px;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
+.swiper {
+  display: none;
+}
+@media (max-width: 743px) {
+  .swiper {
+    display: block;
+  }
+}
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

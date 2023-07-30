@@ -2,6 +2,8 @@
 $color-white: #ffffff;
 $color-black: #000000;
 $color-yellow: #faff00;
+$color-grey: #222222;
+
 @import "./settings";
 
 .container {
@@ -34,3 +36,5 @@ $color-yellow: #faff00;
 
 @import "./main/hero";
 @import "./main/reasons";
+@import "./main/membership";
+@import "./main/swiper";
