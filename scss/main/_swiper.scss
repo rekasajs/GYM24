@@ -1,10 +1,12 @@
-.swiper {
+.membership__swiper {
   display: none;
   @media (max-width: 743px) {
     display: block;
   }
-  &-slide {
-    display: flex;
-    justify-content: center;
-  }
 }
+
+.about__swiper {
+  width: 570px;
+  position: relative;
+  z-index: 1;
+  }

@@ -1,0 +1,27 @@
+.about {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    max-width: 472px;
+  }
+  &__title {
+    font-size: 48px;
+    margin-bottom: 65px;
+  }
+  &__descr {
+    font-size: 14px;
+    line-height: 161.7%;
+    max-width: 472px;
+    p {
+      margin-bottom: 22px;
+    }
+  }
+  &__slider {
+    min-width: 0;
+    height: 454px;
+    display: flex;
+    flex-direction: column;
+  }
+}

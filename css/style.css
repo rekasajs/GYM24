@@ -96,6 +96,7 @@ input {
   left: 0;
   width: 100%;
   z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .header__container {
   display: -webkit-box;
@@ -493,6 +494,7 @@ input {
   }
 }
 .membership__item {
+  border: 1px solid #222222;
   border-radius: 10px;
   background: #222222;
   padding-bottom: 38px;
@@ -508,12 +510,28 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.membership__item:hover {
+  border: 1px solid #faff00;
+}
+.membership__item:hover .membership__item-header {
+  color: #000000;
+  background-color: #faff00;
+}
+.membership__item:hover .membership__item-descr {
+  background-image: url(../img/check--yellow.svg);
 }
 .membership__item-header {
+  border-radius: 10px;
   text-align: center;
   padding: 22px 0px;
   width: 100%;
   border-bottom: 1px solid #000000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .membership__item-header span {
   font-size: 24px;
@@ -532,6 +550,8 @@ input {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: left center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .membership__item-btn {
   display: inline-block;
@@ -541,20 +561,58 @@ input {
   text-align: center;
   margin-top: auto;
 }
+.membership__item-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
 
-.swiper {
+.membership__swiper {
   display: none;
 }
 @media (max-width: 743px) {
-  .swiper {
+  .membership__swiper {
     display: block;
   }
 }
-.swiper-slide {
+
+.about__swiper {
+  width: 570px;
+  position: relative;
+  z-index: 1;
+}
+
+.about__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about__info {
+  max-width: 472px;
+}
+.about__title {
+  font-size: 48px;
+  margin-bottom: 65px;
+}
+.about__descr {
+  font-size: 14px;
+  line-height: 161.7%;
+  max-width: 472px;
+}
+.about__descr p {
+  margin-bottom: 22px;
+}
+.about__slider {
+  min-width: 0;
+  height: 454px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const membershipSwiper = new Swiper('.membership__swiper', {
   slidesPerView: 1.2,
   spaceBetween: 12,
   initialSlide: 1,
@@ -27,4 +27,17 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 2.4,
     },
 }
+});
+
+const aboutSwiper = new Swiper('.about__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: '.about__swiper-pagination',
+    clickable: false,
+  },
+  navigation: {
+    nextEl: '.about__swiper-button-next',
+    prevEl: '.about__swiper-button-prev',
+  },
 });

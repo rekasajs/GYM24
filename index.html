@@ -32,19 +32,19 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#"
+              <a href="#Advantages"
                  class="menu__link">Advantages</a>
             </li>
             <li class="menu__item">
-              <a href="#"
+              <a href="#Membership"
                  class="menu__link">Membership</a>
             </li>
             <li class="menu__item">
-              <a href="#"
+              <a href="#About"
                  class="menu__link">About</a>
             </li>
             <li class="menu__item">
-              <a href="#"
+              <a href="#Trainers"
                  class="menu__link">Trainers</a>
             </li>
           </ul>
@@ -63,13 +63,13 @@
              class="btn hero__btn">Detailed</a>
         </div>
       </section>
-      <section class="reasons">
+      <section class="reasons"
+               id="Advantages">
         <div class="container reasons__container">
           <h2 class="reasons__title title">Reasons to join</h2>
           <div class="reasons__items">
             <div class="reasons__item">
               <img src="img/line.svg"
-                   area-hidden="true"
                    class="reasons__item-img">
               <div class="reasons__item-info">
                 <h3 class="reasons__item-title">15000 sq.m.</h3>
@@ -78,7 +78,6 @@
             </div>
             <div class="reasons__item">
               <img src="img/equipment.svg"
-                   area-hidden="true"
                    class="reasons__item-img">
               <div class="reasons__item-info">
                 <h3 class="reasons__item-title">More than 200 equipment</h3>
@@ -88,7 +87,6 @@
             </div>
             <div class="reasons__item">
               <img src="img/zones.svg"
-                   area-hidden="true"
                    class="reasons__item-img">
               <div class="reasons__item-info">
                 <h3 class="reasons__item-title">4 fitness zones</h3>
@@ -98,7 +96,6 @@
             </div>
             <div class="reasons__item">
               <img src="img/time.svg"
-                   area-hidden="true"
                    class="reasons__item-img">
               <div class="reasons__item-info">
                 <h3 class="reasons__item-title">Round-the-clock operation</h3>
@@ -109,9 +106,11 @@
           </div>
         </div>
       </section>
-      <section class="membership">
+      <section class="membership"
+               id="Membership">
         <div class="container membership__container">
           <h2 class="membership__title title">Gym membership</h2>
+          <!--ГРИД КОНТЕЙНЕР (DESKTOP)-->
           <div class="membership__items">
             <article class="membership__item">
               <div class="membership__item-header">
@@ -244,9 +243,10 @@
             </article>
           </div>
         </div>
-        <div class="swiper">
+        <!--СЛАЙДЕР (МОБИЛКИ)-->
+        <div class="swiper membership__swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide membership__swiper-slide">
               <article class="membership__item">
                 <div class="membership__item-header">
                   <h3 class="membership__item-title">Pass 'Trial'</h3>
@@ -266,7 +266,7 @@
                    class="membership__item-btn btn">Buy</a>
               </article>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide membership__swiper-slide">
               <article class="membership__item">
                 <div class="membership__item-header">
                   <h3 class="membership__item-title">Pass ‘Easy Start’ </h3>
@@ -292,7 +292,7 @@
                    class="membership__item-btn btn">Buy</a>
               </article>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide membership__swiper-slide">
               <article class="membership__item">
                 <div class="membership__item-header">
                   <h3 class="membership__item-title">Pass ‘Free Time’ </h3>
@@ -315,7 +315,7 @@
                    class="membership__item-btn btn">Buy</a>
               </article>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide membership__swiper-slide">
               <article class="membership__item">
                 <div class="membership__item-header">
                   <h3 class="membership__item-title">Pass ‘1 Month 24/7’ </h3>
@@ -335,7 +335,7 @@
                    class="membership__item-btn btn">Buy</a>
               </article>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide membership__swiper-slide">
               <article class="membership__item">
                 <div class="membership__item-header">
                   <h3 class="membership__item-title">Pass ‘In Shape&nbsp;(AM)’ </h3>
@@ -361,7 +361,7 @@
                    class="membership__item-btn btn">Buy</a>
               </article>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide membership__swiper-slide">
               <article class="membership__item">
                 <div class="membership__item-header">
                   <h3 class="membership__item-title">Pass ‘In Shape&nbsp;(PM)’ </h3>
@@ -386,6 +386,60 @@
                 <a href="#"
                    class="membership__item-btn btn">Buy</a>
               </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about"
+               id="about">
+        <div class="container about__container">
+          <div class="about__info">
+            <h2 class="about__title">About us</h2>
+            <div class="about__descr">
+              <p>
+                Gym24 is a leading fitness center located near Grushevka metro station, offering over 1500 sq. m of
+                space dedicated to top-of-the-line workout equipment from leading brands such as Hammer Strength, Life
+                Fitness, and TechnoGym.
+              </p>
+              <p>
+                With affordable membership options, Gym24 is accessible to everyone who wants to reach their fitness
+                goals, whether it's building strength, increasing endurance, or losing weight.
+              </p>
+              <p>
+                Certified trainers at Gym24 provide expert guidance and support to develop personalized workout plans
+                tailored to each individual's needs and goals.
+              </p>
+            </div>
+          </div>
+          <div class="about__slider">
+            <div class="swiper about__swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/about-swiper1.png"
+                       alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/about-swiper2.png"
+                       alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/about-swiper3.png"
+                       alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/about-swiper4.png"
+                       alt="">
+                </div>
+              </div>
+            </div>
+            <div class="about__swiper-control">
+              <div class="about__swiper-pagination"></div>
+              <div class="about__swiper-btns">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
             </div>
           </div>
         </div>
