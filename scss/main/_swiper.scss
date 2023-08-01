@@ -5,8 +5,67 @@
   }
 }
 
-.about__swiper {
-  width: 570px;
-  position: relative;
+.about__swiper--max {
+  
+  width: 100%;
   z-index: 1;
+  @media (max-width: 999px) {
+    display: none;
   }
+}
+.about__swiper--min {
+  display: none;
+  z-index: 1;
+  @media (max-width: 999px) {
+    display: block;
+    
+  }
+}
+.about__swiper-btns {
+  position: absolute;
+  z-index: 2;
+  bottom: -33px;
+  right: 0;
+  display: flex;
+  gap: 12px;
+}
+.about__swiper-button-next {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  @media (max-width: 999px) {
+    display: none;
+  }
+}
+.about__swiper-button-prev {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  @media (max-width: 999px) {
+    display: none;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: 70%;
+  bottom: -23px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: start;
+}
+
+.swiper-pagination-bullet {
+  width: 40px;
+  height: 2px;
+  background-color: $color-white;
+  opacity: 1;
+
+  &-active {
+    background-color: $color-yellow;
+  }
+}

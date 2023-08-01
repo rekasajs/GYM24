@@ -1,7 +1,27 @@
 .about {
+  padding-bottom: 240px;
+  @media (max-width: 999px) {
+    padding-bottom: 180px;
+  }
+  @media (max-width: 743px) {
+    padding-bottom: 200px;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
+    column-gap: 90px;
+
+    @media (max-width: 999px) {
+      margin-bottom: 170px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      row-gap: 80px;
+    }
+    @media (max-width: 743px) {
+      margin-bottom: 70px;
+      font-size: 28px;
+    }
   }
   &__info {
     max-width: 472px;
@@ -9,19 +29,46 @@
   &__title {
     font-size: 48px;
     margin-bottom: 65px;
+    @media (max-width: 999px) {
+      margin-bottom: 90px;
+    }
+    @media (max-width: 743px) {
+      margin-bottom: 50px;
+      font-size: 28px;
+    }
   }
   &__descr {
     font-size: 14px;
     line-height: 161.7%;
-    max-width: 472px;
+    width: 472px;
+    @media (max-width: 743px) {
+      max-width: 280px;
+    }
     p {
-      margin-bottom: 22px;
+      @media (max-width: 743px) {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
     }
   }
-  &__slider {
+  &__slider--max {
+    display: block;
     min-width: 0;
-    height: 454px;
-    display: flex;
-    flex-direction: column;
+    align-self: flex-end;
+    position: relative;
+    @media (max-width: 999px) {
+      display: none;
+    }
+  }
+  &__slider--min {
+    display: none;
+    min-width: 0;
+    @media (max-width: 999px) {
+      display: block;
+    }
   }
 }
